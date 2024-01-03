@@ -1,8 +1,8 @@
-# codelijst-bijlageypes
+# codelijst-bijlageype
 
 ## Samenvatting
 
-De codelijst 'bijlageypes' bevat eenduidige benamingen van ...
+De codelijst 'bijlageype' bevat eenduidige benamingen van ...
 
 
 ## Projectinhoud
