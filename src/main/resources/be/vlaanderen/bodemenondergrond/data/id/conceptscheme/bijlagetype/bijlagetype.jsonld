@@ -1,0 +1,1030 @@
+{
+    "@context": {
+        "collections": {
+            "@type": "@id",
+            "@reverse": "member"
+        },
+        "id": "@id",
+        "type": {
+            "@id": "@type",
+            "@type": "@id"
+        },
+        "source": {
+            "@id": "http://purl.org/dc/terms/source",
+            "@type": "@id"
+        },
+        "sparql-service-description-name": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#name",
+            "@type": "@id"
+        },
+        "identifier": {
+            "@id": "http://purl.org/dc/terms/identifier",
+            "@type": "@id"
+        },
+        "hasVersion": {
+            "@id": "http://purl.org/dc/terms/hasVersion",
+            "@type": "@id"
+        },
+        "isVersionOf": {
+            "@id": "http://purl.org/dc/terms/isVersionOf",
+            "@type": "@id"
+        },
+        "label": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+            "@language": "nl"
+        },
+        "distribution": {
+            "@id": "http://www.w3.org/ns/dcat#distribution",
+            "@type": "@id"
+        },
+        "alternative": {
+            "@id": "http://purl.org/dc/terms/alternative",
+            "@language": "nl"
+        },
+        "description": {
+            "@id": "http://purl.org/dc/terms/description",
+            "@language": "nl"
+        },
+        "spatial": {
+            "@id": "http://purl.org/dc/terms/spatial",
+            "@type": "@id"
+        },
+        "page": {
+            "@id": "http://xmlns.com/foaf/0.1/page",
+            "@type": "@id"
+        },
+        "theme": {
+            "@id": "http://www.w3.org/ns/dcat#theme",
+            "@type": "@id"
+        },
+        "title": {
+            "@id": "http://purl.org/dc/terms/title",
+            "@language": "nl"
+        },
+        "landingPage": {
+            "@id": "http://www.w3.org/ns/dcat#landingPage",
+            "@type": "@id"
+        },
+        "rightsHolder": {
+            "@id": "http://purl.org/dc/terms/rightsHolder",
+            "@type": "@id"
+        },
+        "language": "http://publications.europa.eu/resource/authority/language/",
+        "accrualPeriodicity": {
+            "@id": "http://purl.org/dc/terms/accrualPeriodicity",
+            "@type": "@id"
+        },
+        "publisher": {
+            "@id": "http://purl.org/dc/terms/publisher",
+            "@type": "@id"
+        },
+        "dct.language": {
+            "@id": "http://purl.org/dc/terms/language",
+            "@type": "@id"
+        },
+        "contactPoint": {
+            "@id": "http://www.w3.org/ns/dcat#contactPoint",
+            "@type": "@id"
+        },
+        "temporal": {
+            "@id": "http://purl.org/dc/terms/temporal",
+            "@type": "@id"
+        },
+        "issued": {
+            "@id": "http://purl.org/dc/terms/issued",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "accessRights": {
+            "@id": "http://purl.org/dc/terms/accessRights",
+            "@type": "@id"
+        },
+        "license": {
+            "@id": "http://purl.org/dc/terms/license",
+            "@type": "@id"
+        },
+        "accessURL": {
+            "@id": "http://www.w3.org/ns/dcat#accessURL",
+            "@type": "@id"
+        },
+        "compressFormat": {
+            "@id": "http://www.w3.org/ns/dcat#compressFormat",
+            "@type": "@id"
+        },
+        "downloadURL": {
+            "@id": "http://www.w3.org/ns/dcat#downloadURL",
+            "@type": "@id"
+        },
+        "mediaType": {
+            "@id": "http://www.w3.org/ns/dcat#mediaType",
+            "@type": "@id"
+        },
+        "format": {
+            "@id": "http://purl.org/dc/terms/format",
+            "@type": "@id"
+        },
+        "versionInfo": {
+            "@id": "http://spdx.org/rdf/terms#versionInfo"
+        },
+        "packageName": {
+            "@id": "http://spdx.org/rdf/terms#packageName"
+        },
+        "packageFileName": {
+            "@id": "http://spdx.org/rdf/terms#packageFileName"
+        },
+        "downloadLocation": {
+            "@id": "http://spdx.org/rdf/terms#downloadLocation",
+            "@type": "@id"
+        },
+        "relationshipType_packageOf": {
+            "@id": "http://spdx.org/rdf/terms#relationshipType_packageOf",
+            "@type": "@id"
+        },
+        "availableGraphs": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#availableGraphs",
+            "@type": "@id"
+        },
+        "resultFormat": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#resultFormat",
+            "@type": "@id"
+        },
+        "feature": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#feature",
+            "@type": "@id"
+        },
+        "supportedLanguage": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#supportedLanguage",
+            "@type": "@id"
+        },
+        "url": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#url",
+            "@type": "@id"
+        },
+        "comment": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+            "@language": "nl"
+        },
+        "defaultDataset": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#defaultDataset",
+            "@type": "@id"
+        },
+        "endpoint": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#endpoint",
+            "@type": "@id"
+        },
+        "namedGraph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#namedGraph",
+            "@type": "@id"
+        },
+        "homepage": {
+            "@id": "http://xmlns.com/foaf/0.1/homepage",
+            "@type": "@id"
+        },
+        "service": {
+            "@id": "http://www.w3.org/ns/dcat#service",
+            "@type": "@id"
+        },
+        "rootResource": {
+            "@id": "http://rdfs.org/ns/void#rootResource",
+            "@type": "@id"
+        },
+        "dataset": {
+            "@id": "http://www.w3.org/ns/dcat#dataset",
+            "@type": "@id"
+        },
+        "servesDataset": {
+            "@id": "http://www.w3.org/ns/dcat#servesDataset",
+            "@type": "@id"
+        },
+        "endpointDescription": {
+            "@id": "http://www.w3.org/ns/dcat#endpointDescription",
+            "@type": "@id"
+        },
+        "endpointURL": {
+            "@id": "http://www.w3.org/ns/dcat#endpointURL",
+            "@type": "@id"
+        },
+        "conformsTo": {
+            "@id": "http://purl.org/dc/terms/conformsTo",
+            "@type": "@id"
+        },
+        "dc.identifier": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        },
+        "dc.language": {
+            "@id": "http://purl.org/dc/elements/1.1/language",
+            "@language": "nl"
+        },
+        "dc.source": {
+            "@id": "http://purl.org/dc/elements/1.1/source"
+        },
+        "version": {
+            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        "name": {
+            "@id": "http://spdx.org/rdf/terms#name"
+        },
+        "seeAlso": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+            "@type": "@id"
+        },
+        "inScheme": {
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+            "@type": "@id"
+        },
+        "topConceptOf": {
+            "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+            "@type": "@id"
+        },
+        "hasTopConcept": {
+            "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+            "@type": "@id"
+        },
+        "uri": {
+            "@id": "@id",
+            "@type": "@id"
+        },
+        "prefLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+            "@language": "nl"
+        },
+        "notation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "altLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "@language": "nl"
+        },
+        "note": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note",
+            "@language": "nl"
+        },
+        "definition": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition",
+            "@language": "nl"
+        },
+        "member": {
+            "@id": "http://www.w3.org/2004/02/skos/core#member",
+            "@type": "@id"
+        },
+        "casNumber": {
+            "@id": "http://dbpedia.org/ontology/casNumber"
+        },
+        "references": {
+            "@id": "http://purl.org/dc/terms/references",
+            "@type": "@id"
+        },
+        "isReferencedBy": {
+            "@id": "http://purl.org/dc/terms/isReferencedBy",
+            "@type": "@id"
+        },
+        "relation": {
+            "@id": "http://purl.org/dc/terms/relation",
+            "@type": "@id"
+        },
+        "graph": {
+            "@id": "@graph"
+        },
+        "broaderTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+            "@type": "@id"
+        },
+        "broadMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+            "@type": "@id"
+        },
+        "closeMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+            "@type": "@id"
+        },
+        "exactMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+            "@type": "@id"
+        },
+        "mappingRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+            "@type": "@id"
+        },
+        "broader": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broader",
+            "@type": "@id"
+        },
+        "narrower": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+            "@type": "@id"
+        },
+        "narrowerTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+            "@type": "@id"
+        },
+        "narrowMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+            "@type": "@id"
+        },
+        "semanticRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+            "@type": "@id"
+        },
+        "belongsTo": {
+            "@id": "http://rdf-vocabulary.ddialliance.org/xkos#belongsTo",
+            "@type": "@id"
+        },
+        "concept": "https://data.bodemenondergrond.vlaanderen.be/id/concept/bijlagetype/",
+        "collectie": "https://data.bodemenondergrond.vlaanderen.be/id/collection/bijlagetype/",
+        "access_right": "http://publications.europa.eu/resource/authority/access-right/",
+        "adms": "http://www.w3.org/ns/adms#",
+        "assettype": "http://purl.org/adms/assettype/",
+        "bodembescherming-gop": "https://emis.vito.be/nl/erkende-laboratoria/bodembescherming-gop/",
+        "conceptscheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
+        "country": "http://publications.europa.eu/resource/authority/country/",
+        "datasets": "https://datasets.omgeving.vlaanderen.be/",
+        "datatheme_be": "http://vocab.belgif.be/auth/datatheme/",
+        "datatheme_eu": "http://publications.europa.eu/resource/authority/data-theme/",
+        "dbo": "http://dbpedia.org/ontology/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
+        "eurovoc": "http://eurovoc.europa.eu/",
+        "file_type": "http://publications.europa.eu/resource/authority/file-type/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "formats": "http://www.w3.org/ns/formats/",
+        "frequency": "http://publications.europa.eu/resource/authority/frequency/",
+        "gemet": "http://www.eionet.europa.eu/gemet/concept/",
+        "licence": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/",
+        "metadata": "https://data.omgeving.vlaanderen.be/ns/metadata#",
+        "mest-bodem-veevoeder": "https://emis.vito.be/nl/erkende-laboratoria/mest-bodem-en-veevoeder-vlm/",
+        "omg_catalog": "https://data.omgeving.vlaanderen.be/id/catalog/",
+        "omg_catalog_doc": "https://data.omgeving.vlaanderen.be/doc/catalog/",
+        "omg_collection": "https://data.bodemenondergrond.vlaanderen.be/id/collection/",
+        "omg_dataservice": "https://data.bodemenondergrond.vlaanderen.be/id/dataservice/",
+        "omg_dataset_doc": "https://data.bodemenondergrond.vlaanderen.be/doc/dataset/",
+        "omg_dataset": "https://data.bodemenondergrond.vlaanderen.be/id/dataset/",
+        "omg_distribution_doc": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/",
+        "omg_distribution": "https://data.bodemenondergrond.vlaanderen.be/id/distribution/",
+        "omg_graphcollection": "https://data.bodemenondergrond.vlaanderen.be/id/graphcollection/",
+        "omg_graph": "https://data.bodemenondergrond.vlaanderen.be/id/graph/",
+        "omg_id": "https://data.bodemenondergrond.vlaanderen.be/id/",
+        "omg_named_graph": "https://data.bodemenondergrond.vlaanderen.be/id/namedgraph/",
+        "omg_ontology": "https://data.bodemenondergrond.vlaanderen.be/id/ontology/",
+        "omg_package": "https://data.bodemenondergrond.vlaanderen.be/id/package/",
+        "omg_periodoftime": "https://data.bodemenondergrond.vlaanderen.be/id/periodoftime/",
+        "omg_service": "https://data.bodemenondergrond.vlaanderen.be/id/service/",
+        "omg_vcard": "https://data.bodemenondergrond.vlaanderen.be/id/vcard/",
+        "ovo": "http://data.vlaanderen.be/id/organisatie/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "repo": "https://repo.omgeving.vlaanderen.be/artifactory/release/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "sd": "http://www.w3.org/ns/sparql-service-description#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "ssd": "http://www.w3.org/ns/sparql-service-description#",
+        "ts": "http://www.w3.org/ns/formats/",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "void": "http://rdfs.org/ns/void#",
+        "wise": "http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/",
+        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "water-gop": "https://emis.vito.be/nl/erkende-laboratoria/water-gop/",
+        "bodem-afvalstoffen-ovam": "https://emis.vito.be/nl/erkende-laboratoria/bodem-en-afvalstoffen-ovam/",
+        "@base": "https://data.bodemenondergrond.vlaanderen.be/id/concept/bijlagetype/"
+    },
+    "graph": [
+        {
+            "id": "collectie:bijlagetype",
+            "type": "skos:Collection",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.collection.bijlagetype.bijlagetype",
+            "inScheme": "conceptscheme:bijlagetype",
+            "member": [
+                "concept:0",
+                "concept:10",
+                "concept:11",
+                "concept:12",
+                "concept:13",
+                "concept:14",
+                "concept:15",
+                "concept:16",
+                "concept:17",
+                "concept:18",
+                "concept:19",
+                "concept:1",
+                "concept:20",
+                "concept:2",
+                "concept:30",
+                "concept:31",
+                "concept:32",
+                "concept:33",
+                "concept:34",
+                "concept:35",
+                "concept:36",
+                "concept:37",
+                "concept:38",
+                "concept:3",
+                "concept:4",
+                "concept:5",
+                "concept:6",
+                "concept:7",
+                "concept:8",
+                "concept:9",
+                "concept:BOD10",
+                "concept:BOD11",
+                "concept:BOD12",
+                "concept:BOD1",
+                "concept:BOD2",
+                "concept:BOD3",
+                "concept:BOD4",
+                "concept:BOD5",
+                "concept:BOD6",
+                "concept:BOD7",
+                "concept:BOD8",
+                "concept:BOD9",
+                "concept:CTE1",
+                "concept:CTE2",
+                "concept:CTE3",
+                "concept:CTE4",
+                "concept:CTE5",
+                "concept:CTE6",
+                "concept:CTE7",
+                "concept:GEF",
+                "concept:LABV",
+                "concept:MOT",
+                "concept:ONT1",
+                "concept:ONT2",
+                "concept:ONT3",
+                "concept:ONT4"
+            ],
+            "notation": "bijlagetype",
+            "prefLabel": "Collectie van bijlagetype."
+        },
+        {
+            "id": "concept:0",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.0",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "0",
+            "prefLabel": "edov",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:1",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.1",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "1",
+            "prefLabel": "lithoprofiel",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:10",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.10",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "10",
+            "prefLabel": "Grondwater - IMJV",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:11",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.11",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "11",
+            "prefLabel": "Grondwater - liggingsplan putten",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:12",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.12",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "12",
+            "prefLabel": "boorrapport",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:13",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.13",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "13",
+            "prefLabel": "Grondwater - putschema",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:14",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.14",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "14",
+            "prefLabel": "vergunningsbesluit",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:15",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.15",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "15",
+            "prefLabel": "UG-Biblio",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:16",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.16",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "16",
+            "prefLabel": "UG-Lib",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:17",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.17",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "17",
+            "prefLabel": "kwaliteitscontrole XYZ",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:18",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.18",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "18",
+            "prefLabel": "Grondwater - fiche herstellingen put/filter",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:19",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.19",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "19",
+            "prefLabel": "BGD-txt",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:2",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.2",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "2",
+            "prefLabel": "korrelverdeling",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:20",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.20",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "20",
+            "prefLabel": "BGD-scan",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:3",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.3",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "3",
+            "prefLabel": "geologisch profiel",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:30",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.30",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "30",
+            "prefLabel": "Data aardkundig profiel",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:31",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.31",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "31",
+            "prefLabel": "Andere archeologie",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:32",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.32",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "32",
+            "prefLabel": "toegangsplan",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:33",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.33",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "33",
+            "prefLabel": "Bemalingsstudie",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:34",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.34",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "34",
+            "prefLabel": "sondeerrapport",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:35",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.35",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "35",
+            "prefLabel": "detailplan",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:36",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.36",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "36",
+            "prefLabel": "andere",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:37",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.37",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "37",
+            "prefLabel": "Grondwater - advies",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:38",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.38",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "38",
+            "prefLabel": "Grondwater - afmelding bij heffingen",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:4",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.4",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "4",
+            "prefLabel": "stijghoogtereeks",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:5",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.5",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "5",
+            "prefLabel": "Grondwater kwaliteitsanalyse",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:6",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.6",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "6",
+            "prefLabel": "Grondwater onttrekking-reeks",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:7",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.7",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "7",
+            "prefLabel": "foto",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:8",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.8",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "8",
+            "prefLabel": "boorgatmeting",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:9",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.9",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "9",
+            "prefLabel": "attest opvulling put",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD1",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD1",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD1",
+            "prefLabel": "foto bodem omgeving",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD10",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD10",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD10",
+            "prefLabel": "foto bodem horizontale coupe",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD11",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD11",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD11",
+            "prefLabel": "bodemexcursiegids",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD12",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD12",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD12",
+            "prefLabel": "rapport",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD2",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD2",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD2",
+            "prefLabel": "foto bodem profiel zonder nummering",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD3",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD3",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD3",
+            "prefLabel": "foto bodem profiel met nummering",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD4",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD4",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD4",
+            "prefLabel": "archeologische prospectie",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD5",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD5",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD5",
+            "prefLabel": "archeologische opgraving",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD6",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD6",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD6",
+            "prefLabel": "bodemprofielbeschrijving",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD7",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD7",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD7",
+            "prefLabel": "bodemobservaties",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD8",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD8",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD8",
+            "prefLabel": "foto bodem overzicht",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:BOD9",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.BOD9",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "BOD9",
+            "prefLabel": "foto bodem detail",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:CTE1",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.CTE1",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "CTE1",
+            "prefLabel": "CTE-vooronderzoek",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:CTE2",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.CTE2",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "CTE2",
+            "prefLabel": "CTE-probleemanalyse",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:CTE3",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.CTE3",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "CTE3",
+            "prefLabel": "CTE-oppervlaktedetectie",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:CTE4",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.CTE4",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "CTE4",
+            "prefLabel": "CTE-dieptedetectie",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:CTE5",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.CTE5",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "CTE5",
+            "prefLabel": "CTE-opsporen van CTE",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:CTE6",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.CTE6",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "CTE6",
+            "prefLabel": "CTE-toevalsvondsten",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:CTE7",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.CTE7",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "CTE7",
+            "prefLabel": "CTE-pers",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:GEF",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.GEF",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "GEF",
+            "prefLabel": "GEF bestand",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:LABV",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.LABV",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "LABV",
+            "prefLabel": "Laboverslag",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:MOT",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.MOT",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "MOT",
+            "prefLabel": "statusmotivatie",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:ONT1",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.ONT1",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "ONT1",
+            "prefLabel": "Ontginning - besluiten",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:ONT2",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.ONT2",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "ONT2",
+            "prefLabel": "Ontginning - adviezen",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:ONT3",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.ONT3",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "ONT3",
+            "prefLabel": "Ontginning - schouwingsverslagen",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "concept:ONT4",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bijlagetype.ONT4",
+            "inScheme": "conceptscheme:bijlagetype",
+            "notation": "ONT4",
+            "prefLabel": "Ontginning – werkplan",
+            "topConceptOf": "conceptscheme:bijlagetype"
+        },
+        {
+            "id": "conceptscheme:bijlagetype",
+            "type": "skos:ConceptScheme",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.bijlagetype",
+            "definition": "Lijst van types bijlagen.",
+            "hasTopConcept": [
+                "concept:0",
+                "concept:10",
+                "concept:11",
+                "concept:12",
+                "concept:13",
+                "concept:14",
+                "concept:15",
+                "concept:16",
+                "concept:17",
+                "concept:18",
+                "concept:19",
+                "concept:1",
+                "concept:20",
+                "concept:2",
+                "concept:30",
+                "concept:31",
+                "concept:32",
+                "concept:33",
+                "concept:34",
+                "concept:35",
+                "concept:36",
+                "concept:37",
+                "concept:38",
+                "concept:3",
+                "concept:4",
+                "concept:5",
+                "concept:6",
+                "concept:7",
+                "concept:8",
+                "concept:9",
+                "concept:BOD10",
+                "concept:BOD11",
+                "concept:BOD12",
+                "concept:BOD1",
+                "concept:BOD2",
+                "concept:BOD3",
+                "concept:BOD4",
+                "concept:BOD5",
+                "concept:BOD6",
+                "concept:BOD7",
+                "concept:BOD8",
+                "concept:BOD9",
+                "concept:CTE1",
+                "concept:CTE2",
+                "concept:CTE3",
+                "concept:CTE4",
+                "concept:CTE5",
+                "concept:CTE6",
+                "concept:CTE7",
+                "concept:GEF",
+                "concept:LABV",
+                "concept:MOT",
+                "concept:ONT1",
+                "concept:ONT2",
+                "concept:ONT3",
+                "concept:ONT4"
+            ],
+            "note": "Lijst van types bijlagen.",
+            "prefLabel": "Codelijst bijlagetype."
+        }
+    ]
+}
